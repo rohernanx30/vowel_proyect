@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".vocal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="203dp"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/unicorn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            />
+        <ImageButton
+            android:id="@+id/backA"
+            android:layout_width="69dp"
+            android:layout_height="89dp"
+            android:layout_marginRight="1dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/atras"
+            app:layout_constraintEnd_toStartOf="@id/imageView2"
+            app:layout_constraintTop_toTopOf="@id/imageView2"
+            app:layout_constraintBottom_toBottomOf="@id/imageView2" />
+
+        <ImageView
+            android:id="@+id/banner"
+            style="@style/BotonSinFondo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:fontFamily="@font/century_gothic"
+            android:hapticFeedbackEnabled="false"
+            android:src="@drawable/arriba"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/candy_beans"
+            android:gravity="center"
+            android:text="UNICORN"
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/century_gothic"
+            android:gravity="center"
+            android:text="Letter U of Unicorn"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="219dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Click the button and listen the pronunciation"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <ImageButton
+            android:id="@+id/listen"
+            style="@style/BotonSinFondo"
+            android:layout_width="51dp"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sonido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="350dp"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="(Presiona el botón para escuchar la pronunciacion)"
+            android:textColor="@color/gray"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/yellow"
+            android:fontFamily="@font/century_gothic"
+            android:text="Terminar/Finish"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/listen" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

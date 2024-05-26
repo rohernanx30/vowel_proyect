@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/century_gothic"
+        android:gravity="center"
+        android:text="Adivina / Guess"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/sombra"/>
+
+    <TextView
+        android:id="@+id/tvWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_ _"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tvWordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word Length: "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/century_gothic"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/tvWordLength2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Longitud de la palabra:)"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/century_gothic"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/tvIncorrectLetters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Letters:"
+        android:textSize="20sp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tvIncorrectLetters4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letras incorrectas:"
+        android:textSize="20sp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etLetter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a letter"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:fontFamily="@font/century_gothic"
+        android:maxLength="1"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/century_gothic"
+        android:text="Enviar / send"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

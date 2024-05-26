@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".elefante">
+
+
+        <ImageView
+            android:id="@+id/encbezado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/banner"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+
+        <ImageButton
+            android:id="@+id/listen"
+            style="@style/BotonSinFondo"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="145dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sonido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.186"
+            app:layout_constraintStart_toEndOf="@+id/img_leon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_leon"
+            android:layout_width="105dp"
+            android:layout_height="109dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.284"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/encbezado"
+            app:srcCompat="@drawable/elefante" />
+
+        <TextView
+            android:id="@+id/Indicaciones"
+            android:layout_width="348dp"
+            android:layout_height="86dp"
+            android:layout_marginBottom="356dp"
+            android:gravity="center"
+            android:fontFamily="@font/century_gothic"
+            android:text="Ellie the Elephants                     Big Adventure"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_leon"
+            app:layout_constraintVertical_bias="0.483" />
+
+        <ScrollView
+            android:id="@+id/scroll_cuento"
+            android:layout_width="350dp"
+            android:layout_height="354dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Indicaciones">
+
+            <TextView
+                android:id="@+id/cuento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/elefante"
+                android:textSize="22dp"
+                android:fontFamily="@font/century_gothic" />
+
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
